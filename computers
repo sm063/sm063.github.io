@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>About computers</h1>
+
+</body>
+</html>
+
+<html>
+<body>
+
+<section>
+  <h1>Invoer(input)</h1>
+  <p>Invoer is het proces waarbij gegevens en instucties van externe bronnen in de computer worden gebracht. Dit kunnen gegevens zijn die worden ingevoerdvia toetsenbord,muis,touchscreen,camera,microfoon,scanner of andere invoerapparaten. De invoer kan varieren van tekst e afbeeldingen tot geluid en video.</p>
+</section>
+
+<section>
+  <h1>WWF's Panda symbol</h1>
+  <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+</section>
+
+</body>
+</html>
