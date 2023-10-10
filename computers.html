@@ -1,61 +1,174 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mijn website</title>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    <style>
-        .knop {
-            background-color: #fabbf8; /* Achtergrondkleur van de knop */
-            color: white; /* Tekstkleur */
-            padding: 10px 20px; /* Ruimte binnen de knop */
-            border: none; /* Geen rand */
-            border-radius: 5px; /* Afgeronde hoeken */
-            cursor: pointer; /* Verander de muiscursor bij het zweven */
-        }
-    </style>
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
 
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
 
+.header h1 {
+  font-size: 50px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
 </head>
+
 <body>
 
-    <h1>computers</h1>
+<div class="header">
+  <h1>Over computers</h1>
+  <p>Een computer is een apparaat waarmee gegevens volgens formele procedures (algoritmen) kunnen worden verwerkt.</p>
+</div>
 
-    
-    <button class="knop"><a href="index.html">Home</a></button>
-    <button class="knop">about computers</button>
-    <button class="knop"><a href="kleurmodellen.html">kleurenmodellen</a></button>
-    <button class="knop"><a href="binairestelsel.html">about binairestelsel</a></button>
-    <button class="knop"><a href="compressietechnieken.html">about compressietechnieken</a></button>
-    
+<div class="topnav">
+  <a href="#">"index.html"</a>
+  <a href="#">"computers"</a>
+  <a href="#">"kleurmodellen.html"</a>
+  <a href="#">"binairestelsel.html"</a>
+  <a href="#">"compressietechnieken.html"</a>
+ 
+</div>
 
-    <div class="city">
-        <h2>invoer(input)</h2>
-        <p>Invoer is het proces waarbij gegevens en instucties van externe bronnen in de computer worden gebracht. Dit kunnen gegevens zijn die worden ingevoerdvia toetsenbord,muis,touchscreen,camera,microfoon,scanner of andere invoerapparaten. De invoer kan varieren van tekst e afbeeldingen tot geluid en video.</p>
-        </div> 
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Invoer(input)</h2>
+      <h5>Invoer is het proces waarbij gegevens en instucties van externe bronnen in de computer worden gebracht. Dit kunnen gegevens zijn die worden ingevoerdvia toetsenbord,muis,touchscreen,camera,microfoon,scanner of andere invoerapparaten. De invoer kan varieren van tekst e afbeeldingen tot geluid en video.</h5>
+     
+  
+      <div class="fakeimg" style="height:200px;">Image</div>
         
-        <div class="city">
         <h2>Verwerking (Processing)</h2>
-        <p>Zodra de invoer is verzameld,worden de gegevens verwerkt door de centrale verwerkingseenheid (CPU) van de computer. De CPU voert berekingen uit, verwerkt instructies en manipuleert de gegevens op basis van programma's en algoritmen die zijn opgeslagen in het geheugen van de computer. Deze verwerkingsstap omvat het uitvoeren van wiskundige bewerkingen,logische beslissingen en andere bewerkingen om de invoer om te zetten in bruikbare informatie.</p>
-        </div>
-        
-        <div class="city">
-        <h2>Uitvoer(Output)</h2>
-        <p>Nadat de verwerking is voltooid, genereert de computer uitvoer om de resultaten aan de gebruiker weer te geven. Dit kan plaatsvinden via verschillende uitvoerapparaten, zoals beeldschermen (monitoren), luidsprekers, printers, enzovoort. De uitvoer kan variëren van tekst en grafieken op een beeldscherm tot geluid dat wordt afgespeeld via luidsprekers of een gedrukt document.</p>
-        </div>
-        
-        <div class="city">
-        <h2>Opslaan(Storage)</h2>
-        <p>Tijdens het proces kan de computer gegevens opslaan voor later gebruik. Opslagapparaten, zoals harde schijven, SSD's (Solid State Drives), USB-flashstations en andere opslagmedia, worden gebruikt om gegevens op te slaan, zowel tijdens als na de verwerking. Deze gegevens kunnen programma's, bestanden, configuratie-instellingen en meer omvatten. Opslag is essentieel om gegevens te behouden tussen verschillende sessies van de computer.</p>
-        </div>
-          
-        <div class="city">
-        <h2>Conclusie</h2>
-        <p>Dit proces van invoer, verwerking, uitvoer en opslag herhaalt zich voortdurend terwijl de computer taken uitvoert en interacties met gebruikers mogelijk maakt. Het vermogen van een computer om complexe taken uit te voeren en informatie op te slaan en op te roepen, is gebaseerd op deze fundamentele principes.</p>
-        </div>
+      <h5>Zodra de invoer is verzameld,worden de gegevens verwerkt door de centrale verwerkingseenheid (CPU) van de computer. De CPU voert berekingen uit, verwerkt instructies en manipuleert de gegevens op basis van programma's en algoritmen die zijn opgeslagen in het geheugen van de computer. Deze verwerkingsstap omvat het uitvoeren van wiskundige bewerkingen,logische beslissingen en andere bewerkingen om de invoer om te zetten in bruikbare informatie.h5>
+    </div>
+    
+    
+    <div class="card">
+      <h2>Uitvoer(Output)</h2>
+      <h5>Nadat de verwerking is voltooid, genereert de computer uitvoer om de resultaten aan de gebruiker weer te geven. Dit kan plaatsvinden via verschillende uitvoerapparaten, zoals beeldschermen (monitoren), luidsprekers, printers, enzovoort. De uitvoer kan variëren van tekst en grafieken op een beeldscherm tot geluid dat wordt afgespeeld via luidsprekers of een gedrukt document.</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <h2>Opslaan(Storage)</h2>
+      <h5>Tijdens het proces kan de computer gegevens opslaan voor later gebruik. Opslagapparaten, zoals harde schijven, SSD's (Solid State Drives), USB-flashstations en andere opslagmedia, worden gebruikt om gegevens op te slaan, zowel tijdens als na de verwerking. Deze gegevens kunnen programma's, bestanden, configuratie-instellingen en meer omvatten. Opslag is essentieel om gegevens te behouden tussen verschillende sessies van de computer.</h5>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
 
+<div class="footer">
+<h2>conclusie</h2>
+<h5>Dit proces van invoer, verwerking, uitvoer en opslag herhaalt zich voortdurend terwijl de computer taken uitvoert en interacties met gebruikers mogelijk maakt. Het vermogen van een computer om complexe taken uit te voeren en informatie op te slaan en op te roepen, is gebaseerd op deze fundamentele principes.</h5>
+  
+</div>
 
 </body>
 </html>
-
 
 
