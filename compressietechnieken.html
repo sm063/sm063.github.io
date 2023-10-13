@@ -1,65 +1,182 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mijn website</title>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    <style>
-        .knop {
-            background-color: #fabbf8; /* Achtergrondkleur van de knop */
-            color: white; /* Tekstkleur */
-            padding: 10px 20px; /* Ruimte binnen de knop */
-            border: none; /* Geen rand */
-            border-radius: 5px; /* Afgeronde hoeken */
-            cursor: pointer; /* Verander de muiscursor bij het zweven */
-        }
-    </style>
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
 
 
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
 </head>
+
 <body>
 
-    <h1>HOMEPAGE</h1>
+<div class="header">
+  <h1>compressietechnieken</h1>
+  <p>
+Compressietechnieken zijn methoden voor het verminderen van gegevensgrootte, behoud van informatie, essentieel voor opslag, overdrachtsefficiëntie en verwerkingssnelheid in informatietechnologie.</p>
+</div>
 
-    
-    <button class="knop"><a href="index.html">Home</a></button>
-    <button class="knop"><a href="computers.html">about computers</a></button>
-    <button class="knop"><a href="kleurmodellen.html">kleurenmodellen</a></button>
-    <button class="knop"><a href="binairestelsel.html">about binairestelsel</a></button>
-    <button class="knop">about compressietechnieken</button>
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="computers.html">computers</a>
+  <a href="kleurmodellen.html">kleurmodellen</a>
+  <a href="binairestelsel.html">binairestelsel</a>
+  <a href="compressietechnieken.html">compressietechnieken</a>
+ 
+</div>
 
-    <div class="city">
-        <h2>Beeldopslag</h2>
-        <p><h3>Werking:</h3>Beeldinformatie wordt meestal opgeslagen als een reeks pixels (beeldpunten). Elk pixel vertegenwoordigt een kleurwaarde en wordt opgeslagen als een binair getal. Er zijn twee belangrijke manieren om beeldinformatie op te slaan
-<h3>Bitmapafbeeldingen:</h3> Ook wel rasterafbeeldingen genoemd. Hierbij wordt elk pixel individueel opgeslagen met informatie over de kleur. Bitmapafbeeldingen zijn geschikt voor complexe afbeeldingen met veel details, maar ze kunnen groot zijn in termen van bestandsgrootte.
-        <h3>Vectorafbeeldingen:</h3> In plaats van pixelinformatie op te slaan, worden vectorafbeeldingen opgeslagen als wiskundige instructies om vormen, lijnen en curven te tekenen. Ze zijn schaalbaar zonder verlies van kwaliteit, omdat ze niet afhankelijk zijn van pixelresolutie.
-        </p>
-      </div> 
-      
-      <div class="city">
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Beeldopslag</h2>
+      <h5>Werking:Beeldinformatie wordt meestal opgeslagen als een reeks pixels (beeldpunten). Elk pixel vertegenwoordigt een kleurwaarde en wordt opgeslagen als een binair getal. Er zijn twee belangrijke manieren om beeldinformatie op te slaan </h5>
+
+<h5>Bitmapafbeeldingen:Ook wel rasterafbeeldingen genoemd. Hierbij wordt elk pixel individueel opgeslagen met informatie over de kleur. Bitmapafbeeldingen zijn geschikt voor complexe afbeeldingen met veel details, maar ze kunnen groot zijn in termen van bestandsgrootte.</h5>
+
+<h5>Vectorafbeeldingen:In plaats van pixelinformatie op te slaan, worden vectorafbeeldingen opgeslagen als wiskundige instructies om vormen, lijnen en curven te tekenen. Ze zijn schaalbaar zonder verlies van kwaliteit, omdat ze niet afhankelijk zijn van pixelresolutie.</h5>
+     
+  
+      <div class="fakeimg" style="height:200px;">Image</div>
+        
         <h2>Geluidopslag</h2>
-        <p><h3>Werking:</h3>Geluidsinformatie wordt opgeslagen als golfvormen die de variatie in luchtdruk in de tijd weergeven. Er zijn twee belangrijke parameters die van invloed zijn op de kwaliteit van geluidsopslag
-<h3>Sampling</h3>Geluidsgolven worden gesampled, wat betekent dat de amplitude (intensiteit) van de golf op regelmatige tijdsintervallen wordt gemeten. Hoe hoger de samplefrequentie, hoe gedetailleerder de weergave van het geluid.
-        <h3>Sample Rate</h3>  Dit is het aantal samples per seconde (uitgedrukt in Hertz, Hz). Een typische sample rate voor cd-kwaliteit geluid is 44,1 kHz, wat betekent dat 44.100 samples per seconde worden genomen.
-        </p>
-      </div> 
-      
-      <div class="city">
-        <h2>Tekstcompressie:</h2>
-        <p><h3>Werking:</h3>Tekstcompressie is het proces van het verminderen van de hoeveelheid opslagruimte die nodig is om tekst op te slaan. Er zijn verschillende technieken voor tekstcompressie
-<h3>Lossless compressie:</h3>Hierbij wordt tekst gecomprimeerd zonder verlies van informatie. Populaire formaten zijn bijvoorbeeld ZIP en GZIP. Deze compressiemethoden behouden de oorspronkelijke tekst zonder verlies van kwaliteit.
-        <h3>Lossy compressie:</h3> Dit resulteert in een kleinere bestandsgrootte, maar met een zekere mate van kwaliteitsverlies. Bekende formaten zijn JPEG voor afbeeldingen en MP3 voor audio. Bij het comprimeren van tekst wordt vaak gebruikgemaakt van Huffman-codering en Run-Length Encoding.
-        </p>
-      </div> 
+      <h5>Werking:Geluidsinformatie wordt opgeslagen als golfvormen die de variatie in luchtdruk in de tijd weergeven. Er zijn twee belangrijke parameters die van invloed zijn op de kwaliteit van geluidsopslag</h5>
+<h5>Sampling
+Geluidsgolven worden gesampled, wat betekent dat de amplitude (intensiteit) van de golf op regelmatige tijdsintervallen wordt gemeten. Hoe hoger de samplefrequentie, hoe gedetailleerder de weergave van het geluid.</h5>
+<h5>Sample Rate
+Dit is het aantal samples per seconde (uitgedrukt in Hertz, Hz). Een typische sample rate voor cd-kwaliteit geluid is 44,1 kHz, wat betekent dat 44.100 samples per seconde worden genomen.</h5>
 
-      <div class="city">
-        <h2>Conclusie</h2>
-        <p>In het kort, beeld en geluid worden opgeslagen op verschillende manieren, waarbij beelden meestal als pixels in bitmap- of vectorformaat worden opgeslagen, terwijl geluid wordt vastgelegd door sampling en sample rate. Tekstcompressie kan zowel lossless als lossy zijn, afhankelijk van de toepassing en de gewenste bestandsgrootte.
-        </p>
-      </div>
-
-
+    </div>
     
+    
+    <div class="card">
+      <h2>Tekstcompressie</h2>
+      <h5>Werking:Tekstcompressie is het proces van het verminderen van de hoeveelheid opslagruimte die nodig is om tekst op te slaan. Er zijn verschillende technieken voor tekstcompressie</h5>
+      <h5>Lossless compressie:
+Hierbij wordt tekst gecomprimeerd zonder verlies van informatie. Populaire formaten zijn bijvoorbeeld ZIP en GZIP. Deze compressiemethoden behouden de oorspronkelijke tekst zonder verlies van kwaliteit.</h5>
+<h5>Lossy compressie:
+Dit resulteert in een kleinere bestandsgrootte, maar met een zekere mate van kwaliteitsverlies. Bekende formaten zijn JPEG voor afbeeldingen en MP3 voor audio. Bij het comprimeren van tekst wordt vaak gebruikgemaakt van Huffman-codering en Run-Length Encoding.</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+     </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
 
+<div class="footer">
+<h2>conclusie</h2>
+<h5>Conclusie
+In het kort, beeld en geluid worden opgeslagen op verschillende manieren, waarbij beelden meestal als pixels in bitmap- of vectorformaat worden opgeslagen, terwijl geluid wordt vastgelegd door sampling en sample rate. Tekstcompressie kan zowel lossless als lossy zijn, afhankelijk van de toepassing en de gewenste bestandsgrootte.</h5>
+  
+</div>
 
 </body>
 </html>
